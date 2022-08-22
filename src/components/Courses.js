@@ -3,7 +3,7 @@ import Card from "./Card";
 import styles from "./Courses.module.css";
 const renderCards = (JSON) => {
   let view = JSON.map((jj) => {
-    return <Card json={jj}></Card>;
+    return <Card json={jj} key={jj.id}></Card>;
   });
   return view;
 };

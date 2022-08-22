@@ -18,7 +18,7 @@ function adjustStars(rating) {
   return (
     <>
       {--whole >= 0 ? fullStar : ""}
-      {--whole >= 0 ? fullStar : ""}  
+      {--whole >= 0 ? fullStar : ""}
       {--whole >= 0 ? fullStar : ""}
       {--whole >= 0 ? fullStar : ""}
       {--whole >= 0 ? fullStar : ""}
@@ -34,26 +34,10 @@ function adjustStars(rating) {
     </>
   );
 
-  //   for (let i = 0; i < whole; i++) {
-  //     divv.appendChild(fullStar.cloneNode());
-  //   }
-
-  //   remainder = rating - whole;
-  //   if (remainder >= 0.3 && remainder < 0.8) {
-  //     divv.appendChild(halfStar);
-  //     whole++;
-  //   } else if (remainder >= 0.8) {
-  //     divv.appendChild(fullStar);
-  //     whole++;
-  //   }
-  //   for (let j = whole; j < 5; j++) {
-  //     divv.appendChild(noStar.cloneNode());
-  //   }
 }
 
 function Card(obj) {
-  console.log(obj.json);
-  return (
+    return (
     <article>
       <a className={styles.course} href={"#"}>
         <img src={obj.json.image} alt="pyhon" />
@@ -64,11 +48,6 @@ function Card(obj) {
         <div>
           <span className={styles.rating}>{obj.json.rating.toFixed(2)}</span>
           {adjustStars(obj.json.rating.toFixed(2))}
-          {/* <span className={[styles.checked, "fa fa-star"].join(" ")} ></span> */}
-          {/* <span className={[styles.checked, "fa fa-star"].join(" ")} ></span> */}
-          {/* <span className={[styles.checked, "fa fa-star"].join(" ")} ></span> */}
-          {/* <span className={[styles.checked, "fa fa-star"].join(" ")} ></span> */}
-          {/* <span className={[styles.checked, "fa fa-star-half-full"].join(" ")} ></span> */}
           <span className={styles.grey}>({obj.json.people})</span>
         </div>
         <h5>E£{obj.json.price}</h5>
