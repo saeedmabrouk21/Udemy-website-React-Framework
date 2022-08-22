@@ -1,17 +1,22 @@
 import React from "react";
 import Card from "./Card";
-import styles from "./Courses.module.css"
+import styles from "./Courses.module.css";
+const renderPeople = (JSON) => {
+  let view = JSON.map((jj) => {
+    return <Card json={jj}></Card>;
+  });
+  return view;
+};
 function Courses(obj) {
-    console.log(obj.jsonTrack);
   return (
-    <div className={styles.suggestions}>
-     <Card json={obj.jsonTrack.courses[0]}></Card>
-     <Card json={obj.jsonTrack.courses[1]}></Card>
-     <Card json={obj.jsonTrack.courses[2]}></Card>
-     <Card json={obj.jsonTrack.courses[3]}></Card>
-     <Card json={obj.jsonTrack.courses[4]}></Card>
-     </div>
-  )
+    <>
+      <h2 className={styles.marginrl}   >{obj.jsonTrack.header}</h2>
+      <p className={styles.marginrl}>{obj.jsonTrack.description}</p>
+      <div className={styles.suggestions}>
+        {renderPeople(obj.jsonTrack.courses)}
+      </div>
+    </>
+  );
 }
 
 export default Courses;
