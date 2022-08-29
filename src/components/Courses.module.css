@@ -1,0 +1,22 @@
+.suggestions {
+  /* margin: 0px ; */
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.marginrl {
+  /* margin-right: 3rem; */
+  margin-left: 3rem;
+  max-width: 80rem;
+  text-align: left;
+  font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui;
+}
+h2.marginrl {
+    font-weight: 700;
+    margin-bottom: .8rem;
+    font-size: 2.4rem;
+    letter-spacing: -.02rem;
+}
