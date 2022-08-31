@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./Card.module.css";
-
+import styles from "../CSSmodules/Card.module.css";
+import { Link } from "react-router-dom";
 function adjustStars(rating) {
   const FullStar = () => (
     <span className={[styles.checked, "fa fa-star"].join(" ")}></span>
@@ -17,19 +17,27 @@ function adjustStars(rating) {
   let remainder = rating - whole;
   return (
     <>
-    {[...Array(whole)].map((_,ix) => <FullStar key={ix} />)}
-  {remainder > 0 && remainder < 0.3? <NoStar /> : remainder < 0.8 ? HalfStar : <FullStar />} 
-  {[...Array(emptyStars)].map((_,ix) => <NoStar key={ix} />)}
-      
+      {[...Array(whole)].map((_, ix) => (
+        <FullStar key={ix} />
+      ))}
+      {remainder > 0 && remainder < 0.3 ? (
+        <NoStar />
+      ) : remainder < 0.8 ? (
+        HalfStar
+      ) : (
+        <FullStar />
+      )}
+      {[...Array(emptyStars)].map((_, ix) => (
+        <NoStar key={ix} />
+      ))}
     </>
   );
-
 }
+function Card({ json }) {
+  return (
+    <Link to={`/course:${json.title}`}>
 
-function Card({json}) {
-    return (
     <article>
-      <a className={styles.course} href={"#"}>
         <img src={json.image} alt="pyhon" />
         <h3>{json.title}</h3>
         <h4 className={styles.grey}>
@@ -41,8 +49,9 @@ function Card({json}) {
           <span className={styles.grey}>({json.people})</span>
         </div>
         <h5>E£{json.price}</h5>
-      </a>
     </article>
+    </Link>
+
   );
 }
 

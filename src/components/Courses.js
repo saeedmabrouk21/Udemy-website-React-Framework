@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import styles from "./Courses.module.css";
+import styles from "../CSSmodules/Courses.module.css";
 const renderCards = (JSON) => {
   let view = JSON.map((jj) => {
     return <Card json={jj} key={jj.id}></Card>;
