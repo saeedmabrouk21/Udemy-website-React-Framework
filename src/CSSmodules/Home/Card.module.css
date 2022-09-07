@@ -1,11 +1,7 @@
 article {
-  /* border: solid 1px black; */
   margin: 1rem;
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 .course {
-  /* border: solid 1px black; */
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -25,16 +21,32 @@ h2 {
   font-size: 0.7rem;
 }
 
-img {
-  height: 7rem;
-  width: 14rem;
+.CourseImg {
+  height: 13rem;
+  width: 25rem;
 }
 
-a {
+.wholeCard{
+  text-decoration: none;
+  /* background-color: red; */
+  /* text-align: center; */
+}
+.wholeCard:visited {
   text-decoration: none;
 }
-a:visited {
-  text-decoration: none;
+.imgBackground{
+  background-color: black;
+  height: 13rem;
+  width: 25rem;
+}
+.wholeCard img{
+ border: 1px solid #d1d7dc;
+  
+  background: black;
+  
+}
+.wholeCard img:hover{
+  opacity: 0.9;
 }
 h3 {
   max-width: 14.5rem;
@@ -81,4 +93,19 @@ h5 {
   font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
     Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
     segoe ui symbol;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  
+}
+
+@media screen and (max-width: 1080px) {
+  
+}
+
+@media screen and (max-width: 1500px) {
+  
 }

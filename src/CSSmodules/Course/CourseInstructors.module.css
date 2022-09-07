@@ -1,0 +1,29 @@
+.insImg{
+    border-radius: 50%;
+    height: 11.2rem!important;
+    width: 11.2rem!important;
+    border: 1px solid #d1d7dc;
+    margin-right: 5rem;
+}
+.imgandnumbers{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+.numbers{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 800px) {
+  
+}
+
+@media screen and (max-width: 1080px) {
+  
+}
+
+@media screen and (max-width: 1500px) {
+  
+}

@@ -1,0 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.linear {
+  width: 60%;
+  /* line-height: 2rem; */
+  height: 100%;
+  color: red;
+}
+.linearprogress{
+    height: 3rem;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  
+}
+
+@media screen and (max-width: 1080px) {
+  
+}
+
+@media screen and (max-width: 1500px) {
+  
+}

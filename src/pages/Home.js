@@ -1,17 +1,14 @@
-import React from "react";
-import Courses from "../components/Courses";
-import pythonJson from "../data/python_res.json";
+import Courses from "../components/Home/Courses";
+import NewFeatures from "../components/Home/NewFeatures";
+
 
 function Home() {
+
   return (
     <>
-      <div>bla bla bla </div>
-      <br/>
-      <div>bla bla bla </div>
-      <br/>
-      <div>bla bla bla </div>
-      <br/>
-      <Courses jsonTrack={pythonJson}></Courses>
+      <NewFeatures></NewFeatures>
+
+      <Courses jsonTrack={'python'}></Courses>
     </>
   );
 }

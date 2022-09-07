@@ -1,0 +1,52 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7.3rem;
+  background-color: #1c1d1f;
+  z-index: 1;
+  color: white;
+}
+.info {
+  background-color: #1c1d1f;
+}
+.pageBody {
+  margin: 0 40% 0 13%;
+}
+.rightcard {
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+  /* bottom: 20rem; */
+  margin-bottom: 20rem;
+  
+  /* border:#1c1d1f 1px solid; */
+  height:320rem;
+}
+
+@media screen and (max-width: 1500px) {
+
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 1080px) {
+  .nav {
+    top: auto;
+    bottom: 0;
+  }
+  .rightcard {
+    position: relative;
+    top: auto;
+    right: auto;
+    text-align: center;
+  }
+  .pageBody {
+    margin: 0 20% 0 20%;
+  }
+  .info {
+    padding: 0 0 0 0;
+    margin: 0;
+  }
+}
