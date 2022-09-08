@@ -48,7 +48,7 @@ h2 {
 .wholeCard img:hover{
   opacity: 0.9;
 }
-h3 {
+.title {
   max-width: 14.5rem;
   display: inline-block;
   padding: 0;

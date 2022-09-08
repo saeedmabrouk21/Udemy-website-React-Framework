@@ -13,7 +13,7 @@ function Card({ json }) {
         <div className={styles.imgBackground}>
           <img src={json.image} className={styles.CourseImg} alt="pyhon" />
         </div>
-        <h3>{json.title}</h3>
+        <h3 className={styles.title}>{json.title}</h3>
         <h4 className={styles.grey}>
           {json.instructors.map((y) => y["name"]).toString()}
         </h4>

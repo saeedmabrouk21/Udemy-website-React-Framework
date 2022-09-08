@@ -22,7 +22,7 @@ function NewFeatures() {
           <img src={feature[Math.floor(Math.random() * feature.length)].url} alt="alarm" className={styles.FeaturePhoto} />
           <div className={styles.headpar}>
             <h1 className={styles.strong}>{feature[Math.floor(Math.random() * feature.length)].title}</h1>
-            <h2 className={styles.h6}>{feature[Math.floor(Math.random() * feature.length)].header}</h2>
+            <h2 className={styles.par}>{feature[Math.floor(Math.random() * feature.length)].header}</h2>
           </div>
         </header>
       </>
