@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useState } from "react";
 import { courseContext } from "../../contexts/courseContext";
 import { styled } from "@mui/material/styles";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
@@ -13,12 +13,6 @@ const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
-  "&:not(:last-child)": {
-    borderBottom: 0,
-  },
-  "&:before": {
-    display: "none",
-  },
 }));
 
 const AccordionSummary = styled((props) => (
@@ -47,19 +41,14 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 function CourseContent() {
   let data = useContext(courseContext);
-
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleChange = (panel) => (event, isExpanded) => {
-    console.log(panel);
-    setExpanded(isExpanded ? panel : false);
+  const [Expanded, setExpanded] = useState(true);
+  const handleChange = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded  ? panel  : false);
   };
-  const ExpandAll = () => {
-    [...data.content].forEach((_, ix) => {
-      console.log(`panel${ix}`);
-      setExpanded(false);
-    });
-  };
+  const expandAll = ()=>{
+    setExpanded(Expanded==='allPanels'?false:'allPanels')
+  }
+
   return (
     <>
       <div className={styles.title}>Course Content</div>
@@ -68,25 +57,17 @@ function CourseContent() {
           {data.sectionsCount} sections . {data.lecturesCount} lectures.{" "}
           {data.totalLength} total Length
         </div>
-        <button onClick={ExpandAll} className={styles.expand}>
-          Expand all Sections
-        </button>
+        <button onClick={expandAll} className={styles.expand}>{Expanded==='allPanels'?"collapse":"Expand"} all Sections</button>
       </div>
       <br />
       {[...data.content].map((x, ix) => {
         return (
-          <Accordion
-            onChange={handleChange(`panel${ix}`)}
-            sx={{ width: "100%" }}
-            key={ix}
-          >
+          <Accordion expanded={Expanded === `panel${ix}` ||Expanded === `allPanels`} onChange={handleChange(`panel${ix}`)} sx={{ width: "100%" }} key={ix}>
             <AccordionSummary
               aria-controls={`panel${ix}d-content`}
               id={`panel${ix}bh-header`}
             >
-              <Typography
-                sx={{ width: "80%", flexShrink: 0 }}
-              >
+              <Typography sx={{ width: "80%", flexShrink: 0 }}>
                 <span className={styles.lessontitle}>{x[0]}</span>
               </Typography>
               <Typography sx={{ color: "text.secondary" }}>
