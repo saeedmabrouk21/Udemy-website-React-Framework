@@ -7,8 +7,9 @@ function RightCard() {
 
   return (
     <>
+    <div className={styles.imagebackground}>
     <img src={data.image} alt={data.title} className={styles.img} />
-
+    </div>
     <div className={styles.wholeCard}>
       
       <div className={styles.about}>

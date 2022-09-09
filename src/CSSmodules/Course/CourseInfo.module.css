@@ -34,6 +34,12 @@
 }
 
 @media screen and (max-width: 800px) {
+  .title{
+    font-size: 2.5rem;
+  }
+  .par{
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -44,8 +50,10 @@
         width: 60%;
     }
     .info {
-      margin: 0 20% 0 20%;
+      margin: 0 20%;
+      
     }
+    
 }
 
 @media screen and (max-width: 1500px) {

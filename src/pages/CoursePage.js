@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CourseNavBar from "../components/Course/CourseNavBar";
 import styles from "../CSSmodules/Course/CoursePage.module.css";
@@ -35,31 +35,32 @@ function CoursePage() {
   }
   return (
     <CourseProvider value={json}>
-      <>
-        <div className={styles.nav}>
-          <CourseNavBar></CourseNavBar>
+    <div className={styles.nav}>
+      <CourseNavBar></CourseNavBar>
+    </div>
+    <div className={styles.parent}>
+      <div className={styles.rightcard}>
+        <RightCard></RightCard>
+      </div>
+      <div className={styles.info}>
+        <CourseInfo></CourseInfo>
+      </div>
+      <div className={styles.pageBody}>
+        <Overview></Overview>
+        <div>
+          <CourseContent></CourseContent>
+          <CourseRequirements></CourseRequirements>
+          <CourseDescription></CourseDescription>
+          <CourseInstructors></CourseInstructors>
+          <CourseFeedback></CourseFeedback>
+          <CourseReviews></CourseReviews>
         </div>
-        <div className={styles.rightcard}>
-          <RightCard></RightCard>
-        </div>
-        <div className={styles.info}>
-          <CourseInfo></CourseInfo>
-        </div>
-        <div className={styles.pageBody}>
-          <Overview></Overview>
-          <div>
-            <CourseContent></CourseContent>
-            <CourseRequirements></CourseRequirements>
-            <CourseDescription></CourseDescription>
-            <CourseInstructors></CourseInstructors>
-            <CourseFeedback></CourseFeedback>
-            <CourseReviews></CourseReviews>
-          </div>
-        </div>
-        <Footer></Footer>
-      </>
-    </CourseProvider>
+      </div>
+    </div>
+    <Footer></Footer>
+  </CourseProvider>
+
   );
 }
 
-export default CoursePage;
+export default memo(CoursePage);

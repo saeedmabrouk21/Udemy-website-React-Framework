@@ -6,8 +6,8 @@ function NavBar() {
   return (
     <>
       <ul className={styles.navigationBar}>
-        <li>
-          <button className={[styles.menu, styles.noborder].join(" ")}>
+        <li className={styles.menu}>
+          <button className={[ styles.noborder].join(" ")}>
             <i className="fa fa-align-justify"></i>
           </button>
         </li>
@@ -20,10 +20,10 @@ function NavBar() {
             />
           </Link>
         </li>
-        <li>
+        <li className={styles.menuItem}>
           <button
             type="button"
-            className={[styles.noborder, styles.menuItem].join(" ")}
+            className={[styles.noborder].join(" ")}
           >
             Catorgries
           </button>
@@ -37,64 +37,66 @@ function NavBar() {
           ].join(" ")}
         >
           <form>
-            
             <button type="submit" className={styles.noborder}>
               <i className="glyphicon glyphicon-search"></i>
             </button>
             <input
               id="searchInput"
-              // onKeyUp={addCards(this.value)}
               placeholder="Search for anything"
-              // onBlur={this.value='';addCards('')}
               className={styles.noborder}
+              name="SearchFilter"
               required
             />
           </form>
         </li>
-        <li>
+        <li className={ styles.menuItemItem}>
           <button
             type="button"
-            className={[styles.noborder, styles.menuItemItem].join(" ")}
+            className={[styles.noborder].join(" ")}
           >
             Udemy Business
           </button>
         </li>
 
-        <li>
+        <li className={styles.menuItem}>
           <button
             type="button"
-            className={[styles.noborder, styles.menuItem].join(" ")}
+            className={[
+              styles.noborder,
+              
+              styles.teachonudemy,
+            ].join(" ")}
           >
             Teach on Udemy
           </button>
         </li>
 
-        <li>
-          <button className={styles.noborder}>
+        <li className={styles.shoppingcart}>
+          <button type="button" className={[styles.noborder].join(" ")}>
             <i className="material-icons">shopping_cart</i>
           </button>
         </li>
 
-        <li>
+        <li className={styles.menuItem}>
           <button
             type="button"
-            className={styles.menuItem}
-            style={{  width: "8rem" }}
+            
+            style={{ width: "8rem" }}
           >
             Log in
           </button>
         </li>
-        <li>
+        <li className={styles.menuItem}>
           <button
             type="button"
-            className={[styles.signup, styles.menuItem].join(" ")}
+            className={[styles.signup].join(" ")}
             style={{ backgroundColor: "black", width: "8rem" }}
           >
             Sign up
           </button>
         </li>
-        <li>
-          <button className={styles.menuItem} style={{ marginRight: "2rem" }}>
+        <li className={styles.menuItem}>
+          <button  style={{ marginRight: "2rem" }}>
             <i className="fa fa-globe" style={{ padding: "0rem" }}></i>
           </button>
         </li>

@@ -1,6 +1,7 @@
 article {
   margin: 1rem;
 }
+
 .course {
   display: flex;
   flex-direction: column;
@@ -32,6 +33,9 @@ h2 {
   /* text-align: center; */
 }
 .wholeCard:visited {
+  text-decoration: none;
+}
+.wholeCard:hover {
   text-decoration: none;
 }
 .imgBackground{

@@ -5,14 +5,13 @@ import TextField from "@mui/material/TextField";
 import Autocomplete from "@mui/material/Autocomplete";
 import Rating from "@mui/material/Rating";
 import Like from "./Like";
-import Dislike from "./Like";
 
 function CourseReviews() {
   let data = useContext(courseContext);
 
   return (
     <>
-      <div>Reviews</div>
+      <div className={styles.title}>Reviews</div>
       <div className={styles.reviewsection}>
         <form className={styles.Form}>
           <input placeholder="Search Reviews"></input>

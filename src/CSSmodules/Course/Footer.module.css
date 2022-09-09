@@ -61,6 +61,9 @@
     padding : 2.4rem 4.8rem;
 }
 @media screen and (max-width: 800px) {
+  .buttons{
+    max-height: 25rem;
+  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -71,12 +74,16 @@
 
   .secondsection{
     flex-direction: column;
+    height: 25rem;
   }
   .thirdsection{
     flex-direction: column;
   }
   .buttons{
     max-height: 15rem;
+  }
+  .buttons button {
+    font-size: 1.0rem;
   }
 }
 

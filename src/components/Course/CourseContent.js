@@ -64,12 +64,14 @@ function CourseContent() {
     <>
       <div className={styles.title}>Course Content</div>
       <div className={styles.content}>
-      <div>
-        {data.sectionsCount} sections . {data.lecturesCount} lectures.{" "}
-        {data.totalLength} total Length
+        <div>
+          {data.sectionsCount} sections . {data.lecturesCount} lectures.{" "}
+          {data.totalLength} total Length
+        </div>
+        <button onClick={ExpandAll} className={styles.expand}>
+          Expand all Sections
+        </button>
       </div>
-      </div>
-      <button onClick={ExpandAll} className={styles.expand}>Expand all Sections</button>
       <br />
       {[...data.content].map((x, ix) => {
         return (
@@ -82,8 +84,10 @@ function CourseContent() {
               aria-controls={`panel${ix}d-content`}
               id={`panel${ix}bh-header`}
             >
-              <Typography sx={{ width: "80%", flexShrink: 0 }}>
-                {x[0]}
+              <Typography
+                sx={{ width: "80%", flexShrink: 0 }}
+              >
+                <span className={styles.lessontitle}>{x[0]}</span>
               </Typography>
               <Typography sx={{ color: "text.secondary" }}>
                 {x[1].length} Lectures . {x[1].length * 3}Minutes
@@ -97,28 +101,6 @@ function CourseContent() {
           </Accordion>
         );
       })}
-      {/* <div>
-      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{width :'100%'}}>
-        <AccordionSummary
-          aria-controls="panel1d-content"
-          id="panel1bh-header"
-        >
-          <Typography sx={{ width: '80%', flexShrink: 0 }}>
-            Up and Running With Python
-          </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>2 Lectures . 6min</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      
-    
-       
-    </div> */}
     </>
   );
 }

@@ -4,11 +4,10 @@ import { courseContext } from "../../contexts/courseContext";
 import styles from "../../CSSmodules/Course/CourseInstructors.module.css"
 function CourseInstructors() {
     const { instructor } = useContext(courseContext);
-    console.log(instructor);
 
   return (
     <div>
-      <div>Instructors</div>
+      <div className={styles.title}>Instructors</div>
       <Link to="/home"> {instructor.name}</Link>
       <p>{instructor.Intro}</p>
       <div className={styles.imgandnumbers}>

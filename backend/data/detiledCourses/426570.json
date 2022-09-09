@@ -1,0 +1,139 @@
+{
+  "id": 426570,
+  "topic": "Python",
+      "image": "https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg",
+      "title": "Learn Python: Python for Beginners",
+      "instructor": 
+        {
+          "name": "Abrar Hussain",
+          "Intro": "Programmer, Student",
+          "Image": "https://img-b.udemycdn.com/user/200_H/10971708_a969_3.jpg",
+          "Rating": 4.2,
+          "reviewsNumber": "2,790",
+          "studentsNumber": "29,133",
+          "coursesNumber": "1",
+          "description": [
+            "Hi, I'm Abrar! I'm a student at the University of Toronto with a passion for programming.",
+            "I started learning about programming through the Stanford Engineering Everywhere program years ago, where I worked through the multiple available courses. After that, I dedicated myself towards learning Python and other programming languages so that I could build applications that are useful to people.",
+            "I'm spending most of my time off of this platform, so if you have a question that I haven't responded to on the board, feel free to message me through the other channels."
+          ]
+        }
+      ,
+      "rate": 4.2,
+      "ratingCount": "2,790",
+      "price": "269.99",
+      "originalPrice": "319.99",
+      "Introduction": "Python introduction for beginners. Learn complete Python from scratch!",
+      "enrollCount": "29,133",
+      "lastUpdate": "11/2018",
+      "globe": "English",
+      "Captioning": "English [Auto]",
+      "overview": [
+        "Create fully functional Python programs.",
+        "Understand user input.",
+        "Learn about loop structures and conditionals.",
+        "Correctly execute operations in Python.",
+        "Work with Python file handling.",
+        "Create and modify data structures in Python.",
+        "Manipulate strings and data."
+      ],
+      "sectionsCount": "7",
+      "lecturesCount": "27",
+      "totalLength": "1h 15m",
+      "requirements": [
+        "Internet Connection.",
+        "Mac OSX or PC with Windows Vista or Newer or Linux"
+      ],
+      "description": [
+        "Do you want to become a programmer?",
+        "ou want to be able to create games, work with files, manipulate data, and much more?",
+        "If you want to learn programming or are learning Python for the first time, then you've come to the right place!",
+        "This course has everything you need to get started with Python. We'll first start with the basics of Python - learning about strings, variables, and data types. Then, we'll move on to loops and conditionals. Once we're done with that, we'll learn about functions and files in Python. All of this will culminate towards building a fun game using the concepts we've learned in Python. The entire course is filled with exercises that challenge you so that you get the best experience possible.",
+        "I hope you're excited to dive into Python with this course. So what are you waiting for? Let's get started!"
+      ],
+      "whoFor": [
+        "Programmers",
+        "Students and Teachers",
+        "Beginners",
+        "Anyone who wants to learn to program with Python!"
+      ],
+      "studentFeedback": [39, 37, 18, 4, 2],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Apatrickallen14@Aol.Com",
+          "rate": 5,
+          "content": "I have never thought I would even attempt to get into coding but times have called for it and this course has been very helpful the pace is a little fast but the coaching and examples are easy to understand and each aspect of the lectures are making it easier for me to understand!"
+        },
+        {
+          "id": 2,
+          "name": "Mveli H.",
+          "rate": 2,
+          "content": "first of all the lecturer was not explaining for beginners and I still don't know how access the extra resources. I couldn't view the notes on the videos(it didn't allow me to). From section I had to look at other videos from Youtube because I really could not understand the lecturer."
+        },
+        {
+          "id": 3,
+          "name": "Vedant R.",
+          "rate": 5,
+          "content": "It is a basic introduction to python. However it doesn't have plenty of exercises with ans. Only one- two questions are discussed as questions. It is a great course to start for beginners however they should look for some terms used in python from net or youtube in order to avoid getting confused at their first introduction in the lecture."
+        },
+        {
+          "id": 4,
+          "name": "Eslam Ashraf",
+          "rate": 4,
+          "content": "Indeed it was a good match. To the last courses my personal opinion is that the tutors where really fast making the task of understanding, i would say challenging.."
+        },
+        {
+          "id": 5,
+          "name": "MD. Shamsul A.",
+          "rate": 4.5,
+          "content": "Course is good for those people's who's very new in python. But quite hard to understand for locals. Good to see that some new contents were added in this course that could help to gain knowledge for the beginners.Though all the codes were used in a python shell; it would be better if the teacher uses a IDE like Pycharm/VScode etc to describe that would be better for new pep's to get it faster."
+        }
+      ],
+      "hoursCount": "1.5",
+      "articlesCount": "6",
+      "downloadableResource": "1",
+      "content": [
+        [
+          ["Getting Started"],
+          ["Welcome!", "Install Python", "About Python", "Hello World"]
+        ],
+        [
+          ["The Basics"],
+          [
+            "Basic Syntax",
+            "Variables",
+            "Strings",
+            "Lists",
+            "Dictionaries",
+            "Tuples",
+            "Extra: Tuple Unpacking",
+            "Exercise",
+            "Exercise Solution"
+          ]
+        ],
+        [
+          ["Conditionals and Loops"],
+          [
+            "If-Else Statements",
+            "For Loops",
+            "While Loops",
+            "Pass, Break, and  Continue",
+            "Extra: Exercise Loop"
+          ]
+        ],
+        [["User Input"], ["User Input and Casting", "Exceptions"]],
+        [
+          ["Functions and Files"],
+          [
+            "Understanding Functions",
+            "Opening and Reading Files",
+            "Writing to Files",
+            "Copying a File"
+          ]
+        ],
+        [["Classes and Objects"], ["Creating Classes", "Objects"]],
+        [["Graphics and Animatons"], ["Tkinter Intro"]]
+      ]
+    }
+

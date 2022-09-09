@@ -89,14 +89,16 @@ i{
 }
 .signup {
   color:#fff;
-  /* background-color: black; */
   
 }
+
+
 
 @media screen and (max-width: 800px) {
   .navigationBar {
     justify-content: space-between;
   }
+  
   .menu {
     display: block;
     font-size: 2rem;
@@ -104,10 +106,17 @@ i{
   .menuItem {
     display: none;
   }
-
-  .logo {
-    margin-left: 10rem;
+  .logo{
+    height: 2.0rem;
   }
+
+}
+@media screen and (max-width: 900px) {
+  .teachonudemy{
+    display: none;
+  }
+  
+  
 }
 
 @media screen and (max-width: 1080px) {

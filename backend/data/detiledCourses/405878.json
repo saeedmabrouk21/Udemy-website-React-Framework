@@ -1,0 +1,163 @@
+{
+  "id": 405878,
+  "topic": "Python",
+      "image": "https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg",
+      "title": "Python for Beginners - Learn Programming from scratch",
+      "instructor": 
+        {
+          "name": "Edwin Diaz",
+          "Intro": "Web Developer & Premium Instructor - 800,000 students",
+          "Image": "https://img-b.udemycdn.com/user/200_H/6772884_fcfc_2.jpg",
+          "Rating": 4.4,
+          "reviewsNumber": "123,378",
+          "studentsNumber": "829,107",
+          "coursesNumber": "47",
+          "description": [
+            "Edwin Diaz is a software and web technologies engineer, a life coach trainer who is also a serial entrepreneur with multiple online businesses, ranging from online jewelry shops, affiliate websites, application development and consultations services, personal online schools, etc.",
+            "With over one million students, and clients growing by the thousands a day, Mr. Diaz lets the numbers speak for themselves.",
+            "Founding multiple online companies have allowed Mr. Diaz to have the time to teach others. He currently teaches web technologies on different online platforms. He also teaches life coaching sessions to help others achieve a high level of success in many areas of life.",
+            "For Mr. Diaz, there is nothing more rewarding than helping others become successful.",
+            "His ability to transmit energy, enthusiasm, and complex knowledge allows him to do what he does best 'Teach'.",
+            "Teaching is not just a job for Mr. Diaz but a way of life that continues to flourish every single day.",
+            "Apart from teaching he enjoys spending part of his time with his family."
+          ]
+        },
+      "rate": 4.4,
+      "ratingCount": "1,901",
+      "price": "269.99",
+      "originalPrice": "679.99",
+      "Introduction": "Python For Beginners : This course is meant for absolute beginners in programming or in python.",
+      "enrollCount": "7,663",
+      "lastUpdate": "5/2022",
+      "globe": "English",
+      "Captioning": "English [Auto]",
+      "overview": [
+        "To learn the python language.",
+        "To learn the CORE skills to understand any programming language."
+      ],
+      "sectionsCount": "6",
+      "lecturesCount": "42",
+      "totalLength": "2h 36m",
+      "requirements": ["NO programming knowledge required."],
+      "description": [
+        "NEW PYTHON CODE",
+        "This python for beginners course is geared to students who want to know how python works and also to those totally new to programming.",
+        "The python language has very simple syntax(way to write it) to learn and it is one of the most powerful languages to learn since it can used for a variety of things.",
+        "obs in this field are really lucrative and knowing this language will give you an edge when finding a job and making a lot more money than other developers; python developers are not as many as in other languages since people think is hard. Python is super easy to learn but very powerful since it contains many possibilities.",
+        "Python is growing faster and faster everyday and it has surpassed many other languages over the years for a lot of reasons, which you will find out soon enough."
+      ],
+      "whoFor": [
+        "Student totally new to programming.",
+        "Student totally new to python."
+      ],
+      "studentFeedback": [45, 39, 13, 2, 1],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "Ashu C.",
+          "rate": 3,
+          "content": "i am a homemaker learning languages on udemy hoping for a better future , i hope this will help me in achieving what i want . I am so far able to understand lecture let 's see what comes ahead ."
+        },
+        {
+          "id": 2,
+          "name": "Senduran B.",
+          "rate": 5,
+          "content": "Edwin is a wonderful teacher! His lectures are very short but also informative and really encourages you to code along with him. The lectures were not only easy to follow but Edwin himself was an engaging lecturer that made it really easy to pay attention. His words of encouragement were a nice bonus. I super recommend this course to anyone who wants to get started in Python."
+        },
+        {
+          "id": 3,
+          "name": "Tanishq",
+          "rate": 5,
+          "content": "This was a great learning experience. It was fun and I learned a lot."
+        },
+        {
+          "id": 4,
+          "name": "Mike M.",
+          "rate": 5,
+          "content": "Instructor was very clear and knowledgeable. I was able to understand all the concepts and apply them. The course was a little outdated but I was still able to get almost everything to work."
+        },
+        {
+          "id": 5,
+          "name": "Chad F.",
+          "rate": "4.5",
+          "content": "Edwin is good instructor. I'll be referring back to his lessons and my notes as I really learn to code Python by practicing it over and over -- Edwin is right that is the only way! I really enjoyed this course and it will be useful to me."
+        }
+      ],
+      "hoursCount": "2.5",
+      "articlesCount": "1",
+      "downloadableResource": "1",
+      "content": [
+        [
+          ["Programming fundamentals"],
+          [
+            "Introduction",
+            "What is programming?",
+            "What is source code?",
+            "Compile VS Interpreted Languages",
+            "Strings and numbers",
+            "Variables",
+            "Lists, Arrays or Collections",
+            "Conditional Code - If statements",
+            "Loops",
+            "Functions"
+          ]
+        ],
+        [
+          ["Getting Started with Python"],
+          [
+            "intro to getting started",
+            "What is Python?",
+            "Installing Python",
+            "Running Python IDLE and online",
+            "Installing IDE"
+          ]
+        ],
+        [
+          ["Python Basics"],
+          [
+            "Intro to python basics",
+            "Exercise files",
+            "Strings  &amp; print function",
+            "Numbers / Math",
+            "Variables",
+            "Lists",
+            "Tuples",
+            "Dictionaries"
+          ]
+        ],
+        [
+          ["Conditional structures"],
+          [
+            "intro to conditional code",
+            "If Statements",
+            "While Loop",
+            "For loop",
+            "Break and Continue"
+          ]
+        ],
+        [
+          ["Functions"],
+          [
+            "intro to functions",
+            "Custom Functions &amp; arguments",
+            "Functions with arguments",
+            "Function variable scopes",
+            "Function return",
+            "Functions with flexible arguments",
+            "Unpacking",
+            "Modules",
+            "Built in functions"
+          ]
+        ],
+        [
+          ["Working with files"],
+          [
+            "Intro to working files",
+            "Opening / Creating files / Writing files",
+            "File reading",
+            "Renaming files",
+            "Deleting files"
+          ]
+        ]
+      ]
+}

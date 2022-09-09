@@ -8,7 +8,7 @@ function Overview() {
     <div className={styles.overview}>
     <div className={styles.title}>What you'll learn</div>
     
-    {[...data.overview].map((x,ix)=> <div class={styles.notes}key={ix}><i className="fa fa-check" style={{fontSize:'15px'}}></i> {x}</div>)}
+    {[...data.overview].map((x,ix)=> <div className={styles.notes}key={ix}><i className="fa fa-check" style={{fontSize:'15px'}}></i> {x}</div>)}
     </div>
   )
 }
