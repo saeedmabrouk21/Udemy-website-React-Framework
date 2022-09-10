@@ -1,0 +1,140 @@
+
+input:focus {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  /* color:red; */
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+li {
+  /* margin: 0 2rem; */
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  text-decoration: none;
+  /* marker:none; */
+  display: block;
+  text-align: center;
+}
+
+form {
+  width: 80%;
+  margin-left: 1.3rem;
+  text-align: left;
+
+  /* max-width: 86%; */
+}
+form button {
+  padding: 0;
+  margin: 0 2.2rem
+}
+form input {
+  width: 80%;
+  padding: 0;
+
+  font-size: 1.5rem;
+}
+.navigationBar {
+
+  background-color: white;
+  display: flex;
+  /* margin: 0 30px; */
+  margin-bottom: 0.1%;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  align-items: center;
+}
+.navigationBar button {
+  font-size: 1.4rem;
+  background-color: white;
+  padding:  0.8rem;
+  margin: 0 .3rem;
+  height: 4rem;
+}
+
+
+.searchBar {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  border-radius: 15rem;
+  border: black 1px solid;
+}
+.logo {
+  margin: 1.8rem 1.5rem 1.8rem 2.0rem;
+  height: 3.5rem;
+  padding: 0rem;
+}
+i{
+  margin-left: 10px;
+  padding: 0;
+}
+.marginrl {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+.menu {
+  display: none;
+}
+.noborder {
+  border: none;
+}
+
+.smallSpace {
+  flex-grow: 2;
+}
+.signup {
+  color:#fff;
+  
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .navigationBar {
+    justify-content: space-between;
+  }
+  
+  .menu {
+    display: block;
+    font-size: 2rem;
+  }
+  .menuItem {
+    display: none;
+  }
+  .logo{
+    height: 2.0rem;
+  }
+
+}
+@media screen and (max-width: 900px) {
+  .teachonudemy{
+    display: none;
+  }
+  
+  
+}
+
+@media screen and (max-width: 1080px) {
+  .searchBar {
+    width: 12%;
+  }
+  
+  .navigationBar button {
+    margin: 0.07rem 0.06rem;
+  }
+
+  .menuItemItem {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .searchBar {
+    width: 23%;
+  }
+}

@@ -1,0 +1,27 @@
+.tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress {
+  background-color: #d1d7dc;
+  height: 50%;
+  width: 70%;
+}
+.progressactual {
+  
+  line-height: 40%;
+  background-color: #6a6f73;
+}
+.rate {
+    display: inline-block;
+  width: 2rem;
+  font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.4rem;
+  color: blue;
+  text-decoration:underline;
+}
