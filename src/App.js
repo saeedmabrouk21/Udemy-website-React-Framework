@@ -1,26 +1,24 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import BageNotFound from "./pages/BageNotFound";
 import Home from "./pages/Home";
 import CoursePage from "./pages/CoursePage";
-import zIndex from "@mui/material/styles/zIndex";
+import { useSearchParams } from "react-router-dom";
 function App() {
+  const [searchParams, setSearchParams] = useSearchParams();
+  
   return (
-    <BrowserRouter>
     <div className="App">
       <div className="nav">
-      <NavBar></NavBar>
+        <NavBar setSearch={setSearchParams}></NavBar>
       </div>
-        <Routes>
-          <Route path="/" element={<Home></Home>} />
-          <Route path="/home" element={<Home></Home>} />
-          <Route path="/course/:id" element={<div style={{width:'100%'}}><CoursePage style={{width:'100%'}}/></div>} />
-          <Route path="*" element={<BageNotFound />} />
-        </Routes>
-        </div>
-      </BrowserRouter>
-   
+      <Routes>
+        <Route path="/" element={<Home search={searchParams}></Home>} />
+        <Route path="/course/:id" element={<CoursePage />} />
+        <Route path="*" element={<BageNotFound />} />
+      </Routes>
+    </div>
   );
 }
 export default App;

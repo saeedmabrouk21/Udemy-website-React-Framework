@@ -14,12 +14,12 @@ const map = {
   6: "draw",
 };
 function Courses(obj) {
+  //tabs and navs
   const [trackName, setTrackName] = useState({
     name: obj.jsonTrack,
     value: 0,
   });
   const [json, setJson] = useState(null);
-
   const handleChange = (event, newValue) => {
     setTrackName({ name: map[newValue], value: newValue });
   };
@@ -30,6 +30,10 @@ function Courses(obj) {
         setJson(json);
       });
   }, [trackName]);
+
+  //searching using includes
+  const byTitle = (title) => (book) =>
+    book.title.toLowerCase().includes((title || "").toLowerCase());
 
   if (json) {
     return (
@@ -42,12 +46,12 @@ function Courses(obj) {
               aria-label="ant example"
             >
               <AntTab label="Python" className={styles.tab} />
-              <AntTab label="Excel" className={styles.tab}/>
+              <AntTab label="Excel" className={styles.tab} />
               <AntTab label="Web development" className={styles.tab} />
               <AntTab label="Java script" className={styles.tab} />
-              <AntTab label="Data science" className={styles.tab}/>
-              <AntTab label="Aws certificaiton"  className={styles.tab}/>
-              <AntTab label="Drawing" className={styles.tab}/>
+              <AntTab label="Data science" className={styles.tab} />
+              <AntTab label="Aws certificaiton" className={styles.tab} />
+              <AntTab label="Drawing" className={styles.tab} />
             </AntTabs>
           </Box>
         </Box>
@@ -55,9 +59,11 @@ function Courses(obj) {
           <h2>{json.header}</h2>
           <p>{json.description}</p>
           <div className={styles.suggestions}>
-            {json.courses.map((jj) => {
-              return <Card json={jj} key={jj.id}></Card>;
-            })}
+            {json.courses
+              .filter(byTitle(obj.search.get("search")))
+              .map((jj) => {
+                return <Card json={jj} key={jj.id}></Card>;
+              })}
           </div>
         </div>
       </>

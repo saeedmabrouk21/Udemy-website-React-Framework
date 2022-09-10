@@ -7,7 +7,7 @@ function BageNotFound() {
       <img src="https://s.udemycdn.com/error_page/error-desktop-v1.jpg" alt="Page Not found 404 error" />
       <h1>We can’t find the page you’re looking for</h1>
       <br></br>
-      <Link to="/home">
+      <Link to="/">
         <Button variant="contained">Home</Button>
       </Link>
     </div>

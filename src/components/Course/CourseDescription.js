@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { courseContext } from "../../contexts/courseContext";
 import styles from "../../CSSmodules/Course/CourseDescription.module.css";
-
 import ShowMoreText from "react-show-more-text";
 function CourseDescription() {
   const [expand, setExpand] = useState(false);
@@ -31,6 +30,7 @@ function CourseDescription() {
           <div key={ix}>• {x}</div>
         ))}
       </ShowMoreText> */}
+      
       <div>Who This course is for:</div>
       <p>{data.whoFor}</p>
     </div>

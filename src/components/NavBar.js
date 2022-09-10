@@ -1,18 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link }from "react-router-dom";
 import styles from "../CSSmodules/NavBar.module.css";
 
-function NavBar() {
+function NavBar({ setSearch }) {
+
+  function handleChange(event) {
+    setSearch ({search:event.target.value})
+  }
   return (
     <>
       <ul className={styles.navigationBar}>
         <li className={styles.menu}>
-          <button className={[ styles.noborder].join(" ")}>
+          <button className={[styles.noborder].join(" ")}>
             <i className="fa fa-align-justify"></i>
           </button>
         </li>
         <li>
-          <Link to={"/home"}>
+          <Link to={"/"}>
             <img
               src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
               alt="Udemy logo"
@@ -21,10 +25,7 @@ function NavBar() {
           </Link>
         </li>
         <li className={styles.menuItem}>
-          <button
-            type="button"
-            className={[styles.noborder].join(" ")}
-          >
+          <button type="button" className={[styles.noborder].join(" ")}>
             Catorgries
           </button>
         </li>
@@ -37,7 +38,10 @@ function NavBar() {
           ].join(" ")}
         >
           <form>
-            <button type="submit" className={styles.noborder}>
+            <button
+              type="button"
+              className={styles.noborder}
+            >
               <i className="glyphicon glyphicon-search"></i>
             </button>
             <input
@@ -45,15 +49,13 @@ function NavBar() {
               placeholder="Search for anything"
               className={styles.noborder}
               name="SearchFilter"
+              onChange={handleChange}
               required
             />
           </form>
         </li>
-        <li className={ styles.menuItemItem}>
-          <button
-            type="button"
-            className={[styles.noborder].join(" ")}
-          >
+        <li className={styles.menuItemItem}>
+          <button type="button" className={[styles.noborder].join(" ")}>
             Udemy Business
           </button>
         </li>
@@ -61,11 +63,7 @@ function NavBar() {
         <li className={styles.menuItem}>
           <button
             type="button"
-            className={[
-              styles.noborder,
-              
-              styles.teachonudemy,
-            ].join(" ")}
+            className={[styles.noborder, styles.teachonudemy].join(" ")}
           >
             Teach on Udemy
           </button>
@@ -78,11 +76,7 @@ function NavBar() {
         </li>
 
         <li className={styles.menuItem}>
-          <button
-            type="button"
-            
-            style={{ width: "8rem" }}
-          >
+          <button type="button" style={{ width: "8rem" }}>
             Log in
           </button>
         </li>
@@ -96,7 +90,7 @@ function NavBar() {
           </button>
         </li>
         <li className={styles.menuItem}>
-          <button  style={{ marginRight: "2rem" }}>
+          <button style={{ marginRight: "2rem" }}>
             <i className="fa fa-globe" style={{ padding: "0rem" }}></i>
           </button>
         </li>
