@@ -1,0 +1,94 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7.3rem;
+  background-color: #1c1d1f;
+  z-index: 1;
+  color: white;
+}
+.info {
+  background-color: #1c1d1f;
+  
+}
+.pageBody {
+  margin: 0 40% 0 16%;
+}
+.cardback{
+  background-color: #1c1d1f;
+  /* display: r; */
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+.parent{
+  /* overflow: hidden; */
+    position: relative;
+    width: 100%;
+}
+.rightcard {
+  position: absolute;
+  top: 4rem;
+  right: 10rem;
+  /* bottom: 20rem; */
+  margin-bottom: 20rem;
+  height: 90%;
+  /* border:gold 1px solid; */
+
+  /* box-sizing: inherit; */
+}
+@media screen and (max-width: 1500px) {
+
+}
+
+
+@media screen and (max-width: 1080px) {
+  .nav {
+    top: auto;
+    bottom: 0;
+    /* width: auto; */
+  }
+  .backgroundd{
+    background-color: #1c1d1f;
+  }
+  .rightcard {
+    position: relative;
+    top: auto;
+    right: auto;
+    /* bottom: 0; */
+    text-align: center;
+    height:100%;
+    background-color: #1c1d1f;
+    padding: 0 8rem;
+    margin-bottom: 0;
+    
+  }
+  .pageBody {
+    margin: 0;
+    padding: 0 8rem;
+    width: 100%;
+  }
+  .info {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* width: 100%; */
+  }
+}
+@media screen and (max-width: 900px) {
+  .rightcard {
+    padding: 0 5rem;
+  }
+  .pageBody {
+    padding: 0 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .rightcard {
+    padding: 0 2rem;
+  }
+  .pageBody {
+    padding: 0 2rem;
+  }
+}

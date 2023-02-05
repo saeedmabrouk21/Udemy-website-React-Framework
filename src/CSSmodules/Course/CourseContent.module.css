@@ -1,0 +1,45 @@
+.title {
+  color: #1c1d1f;
+  font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 2.4rem;
+  margin: 0 2.4rem 1.6rem 0rem;
+}
+.expand {
+  border: 0;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 1.4rem;
+  font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  color: #5624d0;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+
+  /* margin: 20rem; */
+}
+.lessontitle {
+  color: #1c1d1f;
+  font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}

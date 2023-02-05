@@ -1,0 +1,46 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  color: #1c1d1f;
+  font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  font-size: 2.4rem;
+  margin: 0 2.4rem 1.6rem 0rem;
+  margin-top: 2rem;
+}
+
+
+
+.courseRate {
+  line-height: 1;
+  font-size: 6.4rem;
+  font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  letter-spacing: -0.02rem;
+  margin: 0;
+  padding: 0;
+  color: #b4690e;
+}
+
+.Linear{
+  width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 1080px) {
+}
+
+@media screen and (max-width: 1500px) {
+}
